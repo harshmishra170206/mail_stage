@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'python -m py_compile app.py'
+                bat '"C:\\Users\\Harsh\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m py_compile app.py'
                 echo 'Build successful: app.py compiled with no syntax errors'
             }
         }
